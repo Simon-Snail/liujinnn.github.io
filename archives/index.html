@@ -281,23 +281,6 @@
         
         
           
-          <li class="menu-item menu-item-公益">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="https://www.lianquan.org/index.jsp/" rel="noopener" target="_blank"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-关于">
 
     
@@ -341,9 +324,6 @@
             
 
     
-    
-      
-      
     
       
       
@@ -465,9 +445,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/54D12A1423095358C21C8DCB45F2C7F2.jpg" alt="Logan">
+              <img class="site-author-image" itemprop="image" src="/uploads/54D12A1423095358C21C8DCB45F2C7F2.jpg" alt="LJ-Simon">
             
-              <p class="site-author-name" itemprop="name">Logan</p>
+              <p class="site-author-name" itemprop="name">LJ-Simon</p>
               <div class="site-description motion-element" itemprop="description">为系统而生，为框架而死，为debug奋斗一辈子； 吃符号的亏，上大小写的当，最后死在需求上。</div>
           </div>
 
@@ -528,7 +508,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Logan</span>
+  <span class="author" itemprop="copyrightHolder">LJ-Simon</span>
 
   
 
@@ -663,6 +643,74 @@
 
 
   
+  
+  <script>
+    
+    function showTime(Counter) {
+      var entries = [];
+      var $visitors = $('.leancloud_visitors');
+
+      $visitors.each(function() {
+        entries.push( $(this).attr('id').trim() );
+      });
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+        .done(function({ results }) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if (countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'SKYG78gWmouoLasu7j8PEkCW-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'SKYG78gWmouoLasu7j8PEkCW-gzGzoHsz',
+                'X-LC-Key': 'ACpDAw1hv1vti1qbs0KSnYc1',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            if ($('.post-title-link').length >= 1) {
+              showTime(Counter);
+            }
+          
+        });
+    });
+  </script>
+
+
 
   
 

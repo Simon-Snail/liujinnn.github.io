@@ -282,23 +282,6 @@
         
         
           
-          <li class="menu-item menu-item-公益">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="https://www.lianquan.org/index.jsp/" rel="noopener" target="_blank"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-关于">
 
     
@@ -364,7 +347,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/09/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Logan">
+      <meta itemprop="name" content="LJ-Simon">
       <meta itemprop="description" content="为系统而生，为框架而死，为debug奋斗一辈子； 吃符号的亏，上大小写的当，最后死在需求上。">
       <meta itemprop="image" content="/uploads/54D12A1423095358C21C8DCB45F2C7F2.jpg">
     </span>
@@ -418,6 +401,17 @@
           
 
           
+          
+            <span id="/2019/04/09/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -528,9 +522,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/54D12A1423095358C21C8DCB45F2C7F2.jpg" alt="Logan">
+              <img class="site-author-image" itemprop="image" src="/uploads/54D12A1423095358C21C8DCB45F2C7F2.jpg" alt="LJ-Simon">
             
-              <p class="site-author-name" itemprop="name">Logan</p>
+              <p class="site-author-name" itemprop="name">LJ-Simon</p>
               <div class="site-description motion-element" itemprop="description">为系统而生，为框架而死，为debug奋斗一辈子； 吃符号的亏，上大小写的当，最后死在需求上。</div>
           </div>
 
@@ -608,7 +602,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Logan</span>
+  <span class="author" itemprop="copyrightHolder">LJ-Simon</span>
 
   
 
@@ -749,6 +743,66 @@
 
 
   
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'SKYG78gWmouoLasu7j8PEkCW-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'SKYG78gWmouoLasu7j8PEkCW-gzGzoHsz',
+                'X-LC-Key': 'ACpDAw1hv1vti1qbs0KSnYc1',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
 
   
 
