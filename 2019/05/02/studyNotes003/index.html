@@ -96,25 +96,20 @@
 
 
 
-  <meta name="description" content="Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。">
+  <meta name="description" content="有趣的事情发生时，可千万别错过了！有一个模式可以帮你的对象知悉现况，不会错过该对象感兴趣的事。对象甚至在运行时可决定是否要继续被通知。有了观察者，你将会消息灵通。">
+<meta name="keywords" content="v1.0.1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【持续更新】Markdown笔记">
-<meta property="og:url" content="http://yoursite.com/2019/04/14/markdownCommand/index.html">
+<meta property="og:title" content="JAVA设计模式之观察者模式 - Observer">
+<meta property="og:url" content="http://yoursite.com/2019/05/02/studyNotes003/index.html">
 <meta property="og:site_name" content="Journey">
-<meta property="og:description" content="Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。">
+<meta property="og:description" content="有趣的事情发生时，可千万别错过了！有一个模式可以帮你的对象知悉现况，不会错过该对象感兴趣的事。对象甚至在运行时可决定是否要继续被通知。有了观察者，你将会消息灵通。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/60AA3E26-F922-4D2A-A27D-DDFECE989767.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/F0AF7FF0-9C73-49C5-8189-B92F92377226.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/BACB5521-E026-460E-80E2-B120B06A5138.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/FBFC2A00-ADE6-496F-A193-046EC33DB49D.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/B37EA9F0-DB43-4554-83CE-0C779B271B8E.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/284D6A0C-3EF2-4E3B-B6A2-41019F723BA7.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/42747F17-248F-4BB8-9E9F-E84CA7C449EE.png">
-<meta property="og:updated_time" content="2019-04-14T07:28:09.473Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/02/studyNotes003/1207253-20190222143757216-341452585.png">
+<meta property="og:updated_time" content="2019-05-02T16:28:27.604Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【持续更新】Markdown笔记">
-<meta name="twitter:description" content="Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/14/markdownCommand/60AA3E26-F922-4D2A-A27D-DDFECE989767.png">
+<meta name="twitter:title" content="JAVA设计模式之观察者模式 - Observer">
+<meta name="twitter:description" content="有趣的事情发生时，可千万别错过了！有一个模式可以帮你的对象知悉现况，不会错过该对象感兴趣的事。对象甚至在运行时可决定是否要继续被通知。有了观察者，你将会消息灵通。">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/02/studyNotes003/1207253-20190222143757216-341452585.png">
 
 
 
@@ -124,7 +119,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/14/markdownCommand/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/02/studyNotes003/">
 
 
 
@@ -134,7 +129,7 @@
   };
 </script>
 
-  <title>【持续更新】Markdown笔记 | Journey</title>
+  <title>JAVA设计模式之观察者模式 - Observer | Journey</title>
   
 
 
@@ -383,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/14/markdownCommand/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/02/studyNotes003/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LJ-Simon">
@@ -400,7 +395,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【持续更新】Markdown笔记
+          <h1 class="post-title" itemprop="name headline">JAVA设计模式之观察者模式 - Observer
 
               
             
@@ -426,9 +421,25 @@
                 
               
 
-              <time title="创建时间：2019-04-14 15:28:09" itemprop="dateCreated datePublished" datetime="2019-04-14T15:28:09+08:00">2019-04-14</time>
+              <time title="创建时间：2019-05-02 23:28:09" itemprop="dateCreated datePublished" datetime="2019-05-02T23:28:09+08:00">2019-05-02</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-03 00:28:27" itemprop="dateModified" datetime="2019-05-03T00:28:27+08:00">2019-05-03</time>
+              
             
           </span>
 
@@ -445,8 +456,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/14/markdownCommand/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/14/markdownCommand/" itemprop="commentCount"></span>
+                <a href="/2019/05/02/studyNotes003/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/02/studyNotes003/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -454,7 +465,7 @@
 
           
           
-            <span id="/2019/04/14/markdownCommand/" class="leancloud_visitors" data-flag-title="【持续更新】Markdown笔记">
+            <span id="/2019/05/02/studyNotes003/" class="leancloud_visitors" data-flag-title="JAVA设计模式之观察者模式 - Observer">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -485,51 +496,43 @@
       
 
       
-        <p>Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。<br><a id="more"></a></p>
-<h2 id="什么是Markdown"><a href="#什么是Markdown" class="headerlink" title="什么是Markdown"></a>什么是Markdown</h2><p>Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前 github、Stackoverflow 等网站均支持这种格式。</p>
-<h2 id="Markdown的优点"><a href="#Markdown的优点" class="headerlink" title="Markdown的优点"></a>Markdown的优点</h2><p>最大好处是：快速掌握。</p>
-<p>简单，适合所有人群，方便打开，不至于出现低版本word打不开高版本word的文档。</p>
-<p>避免软件不同，如对方是wps，看到的word文档效果和你不一样。</p>
-<p>方便快速排版，节省时间。</p>
-<p>轻松的导出为HTML、PDF格式。</p>
-<p>纯文本内容，兼容所有的文本编辑器与文字处理软件。</p>
-<p>支持Markdown语法的编辑器有很多，部分网站也支持。</p>
-<h2 id="Markdown的工具"><a href="#Markdown的工具" class="headerlink" title="Markdown的工具"></a>Markdown的工具</h2><h3 id="Mac平台"><a href="#Mac平台" class="headerlink" title="Mac平台"></a>Mac平台</h3><p>Mou：免费好用，支持实时预览，单文档，左边为编辑的Markdown语言，右边为预览效果。(注:Mac升级到sierra后Mou就不能使用了。据说开发者放弃了更新).</p>
-<p>MacDown: 与Mou相似,支持macOS Mojave.</p>
-<h3 id="Web端"><a href="#Web端" class="headerlink" title="Web端"></a>Web端</h3><p>简书,博客园,掘金</p>
-<h2 id="Markdown使用语法"><a href="#Markdown使用语法" class="headerlink" title="Markdown使用语法"></a>Markdown使用语法</h2><p>注意：所有符号均为英文输入法状态,示例图为:MacDown软件</p>
-<h3 id="标题设置-方法较方便"><a href="#标题设置-方法较方便" class="headerlink" title="标题设置    (#方法较方便)"></a>标题设置    (#方法较方便)</h3><p>第一种方法：在标题文字前加#，一级标题为#，二级标题为##，三级标题为###，以此类推，最多六级，其中一级标题文字最大。</p>
-<p>第二种方法：在标题文字下行输入–（符号前不可有空格），可表示二级标题。</p>
-<p>在标题文字下行输入==，可表示一级标题。</p>
-<p><img src="/2019/04/14/markdownCommand/60AA3E26-F922-4D2A-A27D-DDFECE989767.png" alt></p>
-<h3 id="引用块注释"><a href="#引用块注释" class="headerlink" title="引用块注释"></a>引用块注释</h3><p>>在一段文字前表示引用,如下:</p>
-<blockquote>
-<p>在一段文字前表示引用</p>
-</blockquote>
-<p><img src="/2019/04/14/markdownCommand/F0AF7FF0-9C73-49C5-8189-B92F92377226.png" alt></p>
-<h3 id="文字"><a href="#文字" class="headerlink" title="文字"></a>文字</h3><p>*文字*斜体，**文字**加粗，“*”可用“_”代替，也能实现斜体和加粗。</p>
-<p>文字间换行：在文字前输入</p>
-<p><img src="/2019/04/14/markdownCommand/BACB5521-E026-460E-80E2-B120B06A5138.png" alt></p>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线:</p>
-<p><img src="/2019/04/14/markdownCommand/FBFC2A00-ADE6-496F-A193-046EC33DB49D.png" alt></p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>无序列表：文字前添加*或+或-和一个空格</p>
-<p>有序列表：罗马数字和英文句号和一个空格</p>
-<p><img src="/2019/04/14/markdownCommand/B37EA9F0-DB43-4554-83CE-0C779B271B8E.png" alt></p>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 \<pre> 和 \<code> 标签来把代码区块包起来。</code></pre></p>
-<p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以,示例如下:</p>
-<p><img src="/2019/04/14/markdownCommand/284D6A0C-3EF2-4E3B-B6A2-41019F723BA7.png" alt></p>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>[我的博客](链接)</p>
-<p><a href="https://liujinnn.github.io/" target="_blank" rel="noopener">我的博客</a></p>
-<p><img src="/2019/04/14/markdownCommand/42747F17-248F-4BB8-9E9F-E84CA7C449EE.png" alt></p>
-<h2 id="Markdown的使用范围"><a href="#Markdown的使用范围" class="headerlink" title="Markdown的使用范围"></a>Markdown的使用范围</h2><ol>
-<li><p>邮件写作</p>
-</li>
-<li><p>写文章实现快速排版</p>
-</li>
-<li><p>印象笔记等软件记录笔记</p>
-</li>
+        <p>有趣的事情发生时，可千万别错过了！有一个模式可以帮你的对象知悉现况，不会错过该对象感兴趣的事。对象甚至在运行时可决定是否要继续被通知。有了观察者，你将会消息灵通。<br><a id="more"></a></p>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="观察者模式的定义："><a href="#观察者模式的定义：" class="headerlink" title="观察者模式的定义："></a>观察者模式的定义：</h2><pre><code>在对象之间定义一对多的依赖，这样一来，当一个对象改变状态，依赖它的对象都会收到通知，并自动更新。
+</code></pre><h3 id="简单理解"><a href="#简单理解" class="headerlink" title="简单理解"></a>简单理解</h3><p>为了方便理解观察者模式，我们以报社为例：</p>
+<ol>
+<li>报社的业务是出版报纸；</li>
+<li>向某家报社订阅报纸，只要他们有新报纸出版，就会给你送来。只要你是他们的订户，你就会一直收到新报纸。</li>
+<li>当你不想再看报纸的时候，取消订阅，他们就不会再送新报纸来。</li>
+<li>只要报社还在运营，就会一直有人（或单位）</li>
 </ol>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>简单总结了Markdown的常用语法,有什么问题欢迎留言.</p>
+<p>如果你了解报社的订阅是怎么回事，其实就知道观察者是怎么回事了，只是名称不太一样：<br>出版者改称为“主题”(Subject)或“被观察者”(Observable)，订阅者改称为“观察者”(Observer).<br>    主题 + 观察者 = 观察者模式<br>    主题就是定义中的“一”，观察者为定义中的“多”，当主题有变化时，便会通知它的”订阅者“也就是”观察者“</p>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><ul>
+<li>一个抽象模型有两个方面，其中一个方面依赖于另一个方面。将这些方面封装在独立的对象中使它们可以各自独立地改变和复用。</li>
+<li>一个对象的改变将导致其他一个或多个对象也发生改变，而不知道具体有多少对象将发生改变，可以降低对象之间的耦合度。</li>
+<li>一个对象必须通知其他对象，而并不知道这些对象是谁。</li>
+<li>需要在系统中创建一个触发链，A对象的行为将影响B对象，B对象的行为将影响C对象……，可以使用观察者模式创建一种链式触发机制。</li>
+</ul>
+<p>举例：有一个微信公众号服务，不定时发布一些消息，关注公众号就可以收到推送消息，取消关注就收不到推送消息。</p>
+<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ol>
+<li>观察者和被观察者是抽象耦合的;</li>
+<li>建立一套触发机制。</li>
+</ol>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
+<li>如果一个被观察者对象有很多的直接和间接的观察者的话，将所有的观察者都通知到会花费很多时间;</li>
+<li>如果在观察者和观察目标之间有循环依赖的话，观察目标会触发它们之间进行循环调用，可能导致系统崩溃。</li>
+</ol>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
+<li>JAVA 中已经有了对观察者模式的支持类;</li>
+<li>避免循环引用;</li>
+<li>如果顺序执行，某一观察者错误会导致系统卡壳，一般采用异步方式。</li>
+</ol>
+<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p><img src="/2019/05/02/studyNotes003/1207253-20190222143757216-341452585.png" alt></p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="创建抽象主题-Subject"><a href="#创建抽象主题-Subject" class="headerlink" title="创建抽象主题 - Subject"></a>创建抽象主题 - Subject</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Subject</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//观察者订阅服务</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">registerObserver</span><span class="params">(Observer o)</span></span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//观察者取消订阅服务</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">removeObserver</span><span class="params">(Observer o)</span></span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//主题改变时，会被调用，通知所有观察者</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">notifyObservers</span><span class="params">()</span></span>;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="创建抽象观察者-Observer"><a href="#创建抽象观察者-Observer" class="headerlink" title="创建抽象观察者 - Observer"></a>创建抽象观察者 - Observer</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Observer</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">float</span> temp, <span class="keyword">float</span> humidity, <span class="keyword">float</span> pressure)</span></span>;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="创建具体主题"><a href="#创建具体主题" class="headerlink" title="创建具体主题"></a>创建具体主题</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WeatherData</span> <span class="keyword">implements</span> <span class="title">Subject</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> ArrayList&lt;Observer&gt; observers;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">float</span> temperature;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">float</span> humidity;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">float</span> pressure;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">WeatherData</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		observers = <span class="keyword">new</span> ArrayList&lt;Observer&gt;();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">registerObserver</span><span class="params">(Observer o)</span> </span>&#123;</span><br><span class="line">		observers.add(o);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">removeObserver</span><span class="params">(Observer o)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> i = observers.indexOf(o);</span><br><span class="line">		<span class="keyword">if</span> (i &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">			observers.remove(i);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">notifyObservers</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (Observer observer : observers) &#123;</span><br><span class="line">			observer.update(temperature, humidity, pressure);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">measurementsChanged</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		notifyObservers();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMeasurements</span><span class="params">(<span class="keyword">float</span> temperature, <span class="keyword">float</span> humidity, <span class="keyword">float</span> pressure)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.temperature = temperature;</span><br><span class="line">		<span class="keyword">this</span>.humidity = humidity;</span><br><span class="line">		<span class="keyword">this</span>.pressure = pressure;</span><br><span class="line">		measurementsChanged();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//	public float getTemperature() &#123;</span></span><br><span class="line"><span class="comment">//		return temperature;</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line"><span class="comment">//	</span></span><br><span class="line"><span class="comment">//	public float getHumidity() &#123;</span></span><br><span class="line"><span class="comment">//		return humidity;</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line"><span class="comment">//	</span></span><br><span class="line"><span class="comment">//	public float getPressure() &#123;</span></span><br><span class="line"><span class="comment">//		return pressure;</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="创建一个具体观察者"><a href="#创建一个具体观察者" class="headerlink" title="创建一个具体观察者"></a>创建一个具体观察者</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CurrentConditionsDisplay</span> <span class="keyword">implements</span> <span class="title">Observer</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">float</span> temperature;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">float</span> humidity;</span><br><span class="line">	<span class="keyword">private</span> Subject weatherData;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">CurrentConditionsDisplay</span><span class="params">(Subject weatherData)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.weatherData = weatherData;</span><br><span class="line">		<span class="comment">//订阅</span></span><br><span class="line">		weatherData.registerObserver(<span class="keyword">this</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">float</span> temperature, <span class="keyword">float</span> humidity, <span class="keyword">float</span> pressure)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.temperature = temperature;</span><br><span class="line">		<span class="keyword">this</span>.humidity = humidity;</span><br><span class="line">		display();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"Current conditions: "</span> + temperature </span><br><span class="line">			+ <span class="string">"F degrees and "</span> + humidity + <span class="string">"% humidity"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WeatherStation</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//创建主题</span></span><br><span class="line">		WeatherData weatherData = <span class="keyword">new</span> WeatherData();</span><br><span class="line"></span><br><span class="line">		<span class="comment">//创建观察者并订阅</span></span><br><span class="line">		CurrentConditionsDisplay currentDisplay = <span class="keyword">new</span> CurrentConditionsDisplay(weatherData);</span><br><span class="line"><span class="comment">//		StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);</span></span><br><span class="line"><span class="comment">//		ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//通知观察者</span></span><br><span class="line">		weatherData.setMeasurements(<span class="number">80</span>, <span class="number">65</span>, <span class="number">30.4f</span>);</span><br><span class="line"><span class="comment">//		weatherData.setMeasurements(82, 70, 29.2f);</span></span><br><span class="line"><span class="comment">//		weatherData.setMeasurements(78, 90, 29.2f);</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>设计模式源于生活</p>
 
       
     </div>
@@ -551,6 +554,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/v1-0-1/" rel="tag"># v1.0.1</a>
+          
+        </div>
+      
 
       
       
@@ -560,8 +569,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/09/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/04/28/studyNotes001/" rel="next" title="JAVA设计模式之策略模式 - Strategy">
+                <i class="fa fa-chevron-left"></i> JAVA设计模式之策略模式 - Strategy
               </a>
             
           </div>
@@ -570,8 +579,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/28/studyNotes002/" rel="prev" title="设计模式">
-                设计模式 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/09/studyNotes004/" rel="prev" title="设计模式之单件模式 - Singleton">
+                设计模式之单件模式 - Singleton <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -736,7 +745,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Markdown"><span class="nav-number">1.</span> <span class="nav-text">什么是Markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown的优点"><span class="nav-number">2.</span> <span class="nav-text">Markdown的优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown的工具"><span class="nav-number">3.</span> <span class="nav-text">Markdown的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac平台"><span class="nav-number">3.1.</span> <span class="nav-text">Mac平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Web端"><span class="nav-number">3.2.</span> <span class="nav-text">Web端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown使用语法"><span class="nav-number">4.</span> <span class="nav-text">Markdown使用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标题设置-方法较方便"><span class="nav-number">4.1.</span> <span class="nav-text">标题设置    (#方法较方便)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用块注释"><span class="nav-number">4.2.</span> <span class="nav-text">引用块注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字"><span class="nav-number">4.3.</span> <span class="nav-text">文字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">4.4.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">4.5.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块"><span class="nav-number">4.6.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超链接"><span class="nav-number">4.7.</span> <span class="nav-text">超链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown的使用范围"><span class="nav-number">5.</span> <span class="nav-text">Markdown的使用范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">6.</span> <span class="nav-text">小结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#观察者模式的定义："><span class="nav-number">1.1.</span> <span class="nav-text">观察者模式的定义：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简单理解"><span class="nav-number">1.1.1.</span> <span class="nav-text">简单理解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用场景"><span class="nav-number">1.2.</span> <span class="nav-text">使用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优缺点"><span class="nav-number">1.3.</span> <span class="nav-text">优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优点"><span class="nav-number">1.3.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺点"><span class="nav-number">1.3.2.</span> <span class="nav-text">缺点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">1.3.3.</span> <span class="nav-text">注意事项</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现"><span class="nav-number">2.</span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#类图"><span class="nav-number">2.1.</span> <span class="nav-text">类图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现步骤"><span class="nav-number">2.2.</span> <span class="nav-text">实现步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建抽象主题-Subject"><span class="nav-number">2.2.1.</span> <span class="nav-text">创建抽象主题 - Subject</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建抽象观察者-Observer"><span class="nav-number">2.2.2.</span> <span class="nav-text">创建抽象观察者 - Observer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建具体主题"><span class="nav-number">2.2.3.</span> <span class="nav-text">创建具体主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一个具体观察者"><span class="nav-number">2.2.4.</span> <span class="nav-text">创建一个具体观察者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">2.2.5.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
 
           </div>

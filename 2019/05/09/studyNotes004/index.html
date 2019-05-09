@@ -96,25 +96,18 @@
 
 
 
-  <meta name="description" content="Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。">
+  <meta name="description" content="用来创建独一无二的，是能有一个实例的对象的入场券。告诉你一个好消息，单件模式的类图可以说是所有模式的类图中最简单的，事实上，它的类图上只有一个类！但是，可不要兴奋过头，尽管从类设计的视角来说很简单，但是实现上还是会遇到相当多的波折。所以，系好安全带，出发了！">
+<meta name="keywords" content="v1.0.1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【持续更新】Markdown笔记">
-<meta property="og:url" content="http://yoursite.com/2019/04/14/markdownCommand/index.html">
+<meta property="og:title" content="设计模式之单件模式 - Singleton">
+<meta property="og:url" content="http://yoursite.com/2019/05/09/studyNotes004/index.html">
 <meta property="og:site_name" content="Journey">
-<meta property="og:description" content="Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。">
+<meta property="og:description" content="用来创建独一无二的，是能有一个实例的对象的入场券。告诉你一个好消息，单件模式的类图可以说是所有模式的类图中最简单的，事实上，它的类图上只有一个类！但是，可不要兴奋过头，尽管从类设计的视角来说很简单，但是实现上还是会遇到相当多的波折。所以，系好安全带，出发了！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/60AA3E26-F922-4D2A-A27D-DDFECE989767.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/F0AF7FF0-9C73-49C5-8189-B92F92377226.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/BACB5521-E026-460E-80E2-B120B06A5138.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/FBFC2A00-ADE6-496F-A193-046EC33DB49D.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/B37EA9F0-DB43-4554-83CE-0C779B271B8E.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/284D6A0C-3EF2-4E3B-B6A2-41019F723BA7.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/14/markdownCommand/42747F17-248F-4BB8-9E9F-E84CA7C449EE.png">
-<meta property="og:updated_time" content="2019-04-14T07:28:09.473Z">
+<meta property="og:updated_time" content="2019-05-09T11:41:40.923Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【持续更新】Markdown笔记">
-<meta name="twitter:description" content="Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/14/markdownCommand/60AA3E26-F922-4D2A-A27D-DDFECE989767.png">
+<meta name="twitter:title" content="设计模式之单件模式 - Singleton">
+<meta name="twitter:description" content="用来创建独一无二的，是能有一个实例的对象的入场券。告诉你一个好消息，单件模式的类图可以说是所有模式的类图中最简单的，事实上，它的类图上只有一个类！但是，可不要兴奋过头，尽管从类设计的视角来说很简单，但是实现上还是会遇到相当多的波折。所以，系好安全带，出发了！">
 
 
 
@@ -124,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/14/markdownCommand/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/09/studyNotes004/">
 
 
 
@@ -134,7 +127,7 @@
   };
 </script>
 
-  <title>【持续更新】Markdown笔记 | Journey</title>
+  <title>设计模式之单件模式 - Singleton | Journey</title>
   
 
 
@@ -383,7 +376,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/14/markdownCommand/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/studyNotes004/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LJ-Simon">
@@ -400,7 +393,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【持续更新】Markdown笔记
+          <h1 class="post-title" itemprop="name headline">设计模式之单件模式 - Singleton
 
               
             
@@ -426,9 +419,13 @@
                 
               
 
-              <time title="创建时间：2019-04-14 15:28:09" itemprop="dateCreated datePublished" datetime="2019-04-14T15:28:09+08:00">2019-04-14</time>
+              <time title="创建时间：2019-05-09 16:28:09 / 修改时间：19:41:40" itemprop="dateCreated datePublished" datetime="2019-05-09T16:28:09+08:00">2019-05-09</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -445,8 +442,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/14/markdownCommand/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/14/markdownCommand/" itemprop="commentCount"></span>
+                <a href="/2019/05/09/studyNotes004/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/09/studyNotes004/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -454,7 +451,7 @@
 
           
           
-            <span id="/2019/04/14/markdownCommand/" class="leancloud_visitors" data-flag-title="【持续更新】Markdown笔记">
+            <span id="/2019/05/09/studyNotes004/" class="leancloud_visitors" data-flag-title="设计模式之单件模式 - Singleton">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -485,51 +482,38 @@
       
 
       
-        <p>Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。<br><a id="more"></a></p>
-<h2 id="什么是Markdown"><a href="#什么是Markdown" class="headerlink" title="什么是Markdown"></a>什么是Markdown</h2><p>Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前 github、Stackoverflow 等网站均支持这种格式。</p>
-<h2 id="Markdown的优点"><a href="#Markdown的优点" class="headerlink" title="Markdown的优点"></a>Markdown的优点</h2><p>最大好处是：快速掌握。</p>
-<p>简单，适合所有人群，方便打开，不至于出现低版本word打不开高版本word的文档。</p>
-<p>避免软件不同，如对方是wps，看到的word文档效果和你不一样。</p>
-<p>方便快速排版，节省时间。</p>
-<p>轻松的导出为HTML、PDF格式。</p>
-<p>纯文本内容，兼容所有的文本编辑器与文字处理软件。</p>
-<p>支持Markdown语法的编辑器有很多，部分网站也支持。</p>
-<h2 id="Markdown的工具"><a href="#Markdown的工具" class="headerlink" title="Markdown的工具"></a>Markdown的工具</h2><h3 id="Mac平台"><a href="#Mac平台" class="headerlink" title="Mac平台"></a>Mac平台</h3><p>Mou：免费好用，支持实时预览，单文档，左边为编辑的Markdown语言，右边为预览效果。(注:Mac升级到sierra后Mou就不能使用了。据说开发者放弃了更新).</p>
-<p>MacDown: 与Mou相似,支持macOS Mojave.</p>
-<h3 id="Web端"><a href="#Web端" class="headerlink" title="Web端"></a>Web端</h3><p>简书,博客园,掘金</p>
-<h2 id="Markdown使用语法"><a href="#Markdown使用语法" class="headerlink" title="Markdown使用语法"></a>Markdown使用语法</h2><p>注意：所有符号均为英文输入法状态,示例图为:MacDown软件</p>
-<h3 id="标题设置-方法较方便"><a href="#标题设置-方法较方便" class="headerlink" title="标题设置    (#方法较方便)"></a>标题设置    (#方法较方便)</h3><p>第一种方法：在标题文字前加#，一级标题为#，二级标题为##，三级标题为###，以此类推，最多六级，其中一级标题文字最大。</p>
-<p>第二种方法：在标题文字下行输入–（符号前不可有空格），可表示二级标题。</p>
-<p>在标题文字下行输入==，可表示一级标题。</p>
-<p><img src="/2019/04/14/markdownCommand/60AA3E26-F922-4D2A-A27D-DDFECE989767.png" alt></p>
-<h3 id="引用块注释"><a href="#引用块注释" class="headerlink" title="引用块注释"></a>引用块注释</h3><p>>在一段文字前表示引用,如下:</p>
-<blockquote>
-<p>在一段文字前表示引用</p>
-</blockquote>
-<p><img src="/2019/04/14/markdownCommand/F0AF7FF0-9C73-49C5-8189-B92F92377226.png" alt></p>
-<h3 id="文字"><a href="#文字" class="headerlink" title="文字"></a>文字</h3><p>*文字*斜体，**文字**加粗，“*”可用“_”代替，也能实现斜体和加粗。</p>
-<p>文字间换行：在文字前输入</p>
-<p><img src="/2019/04/14/markdownCommand/BACB5521-E026-460E-80E2-B120B06A5138.png" alt></p>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线:</p>
-<p><img src="/2019/04/14/markdownCommand/FBFC2A00-ADE6-496F-A193-046EC33DB49D.png" alt></p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>无序列表：文字前添加*或+或-和一个空格</p>
-<p>有序列表：罗马数字和英文句号和一个空格</p>
-<p><img src="/2019/04/14/markdownCommand/B37EA9F0-DB43-4554-83CE-0C779B271B8E.png" alt></p>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 \<pre> 和 \<code> 标签来把代码区块包起来。</code></pre></p>
-<p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以,示例如下:</p>
-<p><img src="/2019/04/14/markdownCommand/284D6A0C-3EF2-4E3B-B6A2-41019F723BA7.png" alt></p>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>[我的博客](链接)</p>
-<p><a href="https://liujinnn.github.io/" target="_blank" rel="noopener">我的博客</a></p>
-<p><img src="/2019/04/14/markdownCommand/42747F17-248F-4BB8-9E9F-E84CA7C449EE.png" alt></p>
-<h2 id="Markdown的使用范围"><a href="#Markdown的使用范围" class="headerlink" title="Markdown的使用范围"></a>Markdown的使用范围</h2><ol>
-<li><p>邮件写作</p>
-</li>
-<li><p>写文章实现快速排版</p>
-</li>
-<li><p>印象笔记等软件记录笔记</p>
-</li>
+        <p>用来创建独一无二的，是能有一个实例的对象的入场券。告诉你一个好消息，单件模式的类图可以说是所有模式的类图中最简单的，事实上，它的类图上只有一个类！但是，可不要兴奋过头，尽管从类设计的视角来说很简单，但是实现上还是会遇到相当多的波折。所以，系好安全带，出发了！<br><a id="more"></a></p>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>单件模式（Singleton Pattern）：确保一个类只有一个实例，并提供一个全局访问点。</p>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>有些对象其实我们只需要一个，比如：线程池（threadpool），缓存（cache），对话框，处理偏好设置和注册表（registry）的对象，日志对象，充当打印机，显卡等设备的驱动程序的对象。事实上，这类对象只能有一个实例，如果制造出多个实例，就会导致许多问题产生，例如：程序的行为异常，资源使用过量，或者是不一致的结果。</p>
+<h2 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ol>
+<li>单件模式是独一无二的，能够确保程序在任何时刻都只有一个对象；</li>
+<li>由于在系统内存中只存在一个对象，因此可以节约系统资源，对于一些需要频繁创建和销毁的对象，单件模式可以提高系统性能。</li>
 </ol>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>简单总结了Markdown的常用语法,有什么问题欢迎留言.</p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
+<li>由于单件模式中没有抽象层，因此扩展困难；</li>
+<li>职责过重，在一定程度上违背了“但一职责原则”。</li>
+</ol>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><p>在java中实现单件模式需要注意以下三点：</p>
+<ol>
+<li>私有的构造器；</li>
+<li>一个静态方法；</li>
+<li>一个静态变量。</li>
+</ol>
+<h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><h1 id="单件模式的实现"><a href="#单件模式的实现" class="headerlink" title="单件模式的实现"></a>单件模式的实现</h1><h2 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h2><h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 饿汉式（不能懒加载）</span></span><br><span class="line"><span class="comment"> * 线程安全</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleHungry</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//提供一个静态的全局变量作为访问该实例的入口</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> SingleHungry instance = <span class="keyword">new</span> SingleHungry(); </span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 构造器私有</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="title">SingleHungry</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 对外提供静态的方法，用来获取该类的实例</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleHungry <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> instance;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="要点-1"><a href="#要点-1" class="headerlink" title="要点"></a>要点</h3><p>优点：线程安全；<br>缺点：不能懒加载。</p>
+<h2 id="静态内部类（饿汉式的变种）"><a href="#静态内部类（饿汉式的变种）" class="headerlink" title="静态内部类（饿汉式的变种）"></a>静态内部类（饿汉式的变种）</h2><h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 静态内部类（利用类加载机制）</span></span><br><span class="line"><span class="comment"> * 线程安全</span></span><br><span class="line"><span class="comment"> * 懒加载</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleInner</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="title">SingleInner</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleInnerHolder</span></span>&#123;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> SingleInner instance = <span class="keyword">new</span> SingleInner();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleInner <span class="title">getInsstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> SingleInnerHolder.instance;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="要点-2"><a href="#要点-2" class="headerlink" title="要点"></a>要点</h3><p>解决了饿汉式不能懒加载的问题。</p>
+<h2 id="懒汉式"><a href="#懒汉式" class="headerlink" title="懒汉式"></a>懒汉式</h2><h3 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 懒汉式(懒加载)</span></span><br><span class="line"><span class="comment"> * 线程不安全</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singlelazy</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Singlelazy instance = <span class="keyword">null</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 构造器私有</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="title">Singlelazy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"构造器被调用了"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singlelazy <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">			instance = <span class="keyword">new</span> Singlelazy();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> instance;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="要点-3"><a href="#要点-3" class="headerlink" title="要点"></a>要点</h3><p>优点：可以实现懒加载；<br>缺点：线程不安全。</p>
+<h2 id="双重检测（懒汉式的变种）"><a href="#双重检测（懒汉式的变种）" class="headerlink" title="双重检测（懒汉式的变种）"></a>双重检测（懒汉式的变种）</h2><h3 id="代码实现-3"><a href="#代码实现-3" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singlelazy2</span> </span>&#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 双重检测(懒加载的变种)</span></span><br><span class="line"><span class="comment">	 * 延迟加载</span></span><br><span class="line"><span class="comment">	 * 线程安全</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> Singlelazy2 instance;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">		 * 构造器私有</span></span><br><span class="line"><span class="comment">		 */</span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="title">Singlelazy2</span><span class="params">()</span> </span>&#123;</span><br><span class="line">			System.out.println(<span class="string">"构造器被调用了"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singlelazy2 <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">				<span class="keyword">synchronized</span> (Singlelazy2.class) &#123;</span><br><span class="line">					<span class="keyword">if</span>(instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">						instance = <span class="keyword">new</span> Singlelazy2();</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">return</span> instance;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="要点-4"><a href="#要点-4" class="headerlink" title="要点"></a>要点</h3><p>解决了懒汉式线程不安全的问题。</p>
+<h2 id="枚举实现"><a href="#枚举实现" class="headerlink" title="枚举实现"></a>枚举实现</h2><h3 id="代码实现-4"><a href="#代码实现-4" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 枚举类的单例模式</span></span><br><span class="line"><span class="comment"> * 不存在出现序列化，反射构建对象的漏洞。不能懒加载。默认线程安全</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> SingleEnum &#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//定义示例化的单例对象</span></span><br><span class="line">	INSTANCE;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 对象执行的功能</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol>
+<li>单件模式的定义；</li>
+<li>单件模式的适用场景；</li>
+<li>实现单件模式的三个要点；</li>
+<li>五种实现单件模式的方法，及优缺点；<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1>设计模式源于生活</li>
+</ol>
 
       
     </div>
@@ -551,6 +535,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/v1-0-1/" rel="tag"># v1.0.1</a>
+          
+        </div>
+      
 
       
       
@@ -560,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/09/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/05/02/studyNotes003/" rel="next" title="JAVA设计模式之观察者模式 - Observer">
+                <i class="fa fa-chevron-left"></i> JAVA设计模式之观察者模式 - Observer
               </a>
             
           </div>
@@ -569,10 +559,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/28/studyNotes002/" rel="prev" title="设计模式">
-                设计模式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -736,7 +722,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Markdown"><span class="nav-number">1.</span> <span class="nav-text">什么是Markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown的优点"><span class="nav-number">2.</span> <span class="nav-text">Markdown的优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown的工具"><span class="nav-number">3.</span> <span class="nav-text">Markdown的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac平台"><span class="nav-number">3.1.</span> <span class="nav-text">Mac平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Web端"><span class="nav-number">3.2.</span> <span class="nav-text">Web端</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown使用语法"><span class="nav-number">4.</span> <span class="nav-text">Markdown使用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标题设置-方法较方便"><span class="nav-number">4.1.</span> <span class="nav-text">标题设置    (#方法较方便)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用块注释"><span class="nav-number">4.2.</span> <span class="nav-text">引用块注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字"><span class="nav-number">4.3.</span> <span class="nav-text">文字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">4.4.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">4.5.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块"><span class="nav-number">4.6.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#超链接"><span class="nav-number">4.7.</span> <span class="nav-text">超链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown的使用范围"><span class="nav-number">5.</span> <span class="nav-text">Markdown的使用范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">6.</span> <span class="nav-text">小结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用场景"><span class="nav-number">1.2.</span> <span class="nav-text">使用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#要点"><span class="nav-number">1.3.</span> <span class="nav-text">要点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优点"><span class="nav-number">1.3.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺点"><span class="nav-number">1.3.2.</span> <span class="nav-text">缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现方式"><span class="nav-number">1.4.</span> <span class="nav-text">实现方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类图"><span class="nav-number">1.5.</span> <span class="nav-text">类图</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单件模式的实现"><span class="nav-number">2.</span> <span class="nav-text">单件模式的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#饿汉式"><span class="nav-number">2.1.</span> <span class="nav-text">饿汉式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">2.1.1.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#要点-1"><span class="nav-number">2.1.2.</span> <span class="nav-text">要点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态内部类（饿汉式的变种）"><span class="nav-number">2.2.</span> <span class="nav-text">静态内部类（饿汉式的变种）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#要点-2"><span class="nav-number">2.2.2.</span> <span class="nav-text">要点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#懒汉式"><span class="nav-number">2.3.</span> <span class="nav-text">懒汉式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现-2"><span class="nav-number">2.3.1.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#要点-3"><span class="nav-number">2.3.2.</span> <span class="nav-text">要点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双重检测（懒汉式的变种）"><span class="nav-number">2.4.</span> <span class="nav-text">双重检测（懒汉式的变种）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现-3"><span class="nav-number">2.4.1.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#要点-4"><span class="nav-number">2.4.2.</span> <span class="nav-text">要点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#枚举实现"><span class="nav-number">2.5.</span> <span class="nav-text">枚举实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现-4"><span class="nav-number">2.5.1.</span> <span class="nav-text">代码实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
 
           </div>
